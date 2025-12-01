@@ -14,7 +14,7 @@ while True:
     try:
         a = input("как редактируем изображение? Отзеркалить по горизонтали(1), инвертировать(2), черно-белое(3), спецэффект(4) ")
         if a == "1":
-            pixels = list(im.getdata())  # Получаем данные пикселей
+            pixels = list(im.getdata())
             w, h = im.size
             rows = [pixels[i * w: (i + 1) * w] for i in range(h)]
             flipped_rows = [row[::-1] for row in rows]
