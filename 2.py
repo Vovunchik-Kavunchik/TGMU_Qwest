@@ -45,7 +45,7 @@ while True:
         #for x in range(0:im.size):
         y=input ('введи новое имя файла ')
         try:
-            im.save("Images/" + y + ".jpg")
+            im.save("Images/red.img/" + y + ".jpg")
             break
         except Exception as d:
             print("Попробуй снова ошибка ", d)
